@@ -1,0 +1,28 @@
+/*
+Theme Name: myTheme
+Author: Alexander Schilpp
+Auther URI: http://www.alexschilpp.com
+Version: 1.0
+*/
+html, body { height: 100%; }
+
+body { padding-top: 50px; }
+
+.main-content { padding: 40px 15px; }
+
+/* Navbar */
+/* Footer */
+/* CHOOSE DESKTOP FIRST OR MOBILE FIRST 	 ----------------------------------------------------------------- DESKTOP FIRST  */
+/* Large devices (large desktops, 1200px and up) */
+/* No media query since this is the default */
+/* Medium devices (desktops, less than 1200px) */
+/* Small devices (tablets, less than 992px) */
+/* Extra small devices (phones, less than 768px */
+/* 	 ----------------------------------------------------------------- MOBILE FIRST  */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+/*# sourceMappingURL=style.css.map */
