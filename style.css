@@ -8,9 +8,20 @@ html, body { height: 100%; }
 
 body { padding-top: 50px; }
 
-.main-content { padding: 40px 15px; }
+.main-content { padding: 20px; }
 
 /* Navbar */
+.navbar { /* Hamburger X animation */ }
+.navbar .navbar-toggle { border: none 0; background-color: transparent; }
+.navbar .navbar-toggle .icon-bar { transition: all 0.2s; }
+.navbar .navbar-toggle .icon-bar.top-bar { transform: rotate(45deg); transform-origin: 10% 10%; }
+.navbar .navbar-toggle .icon-bar.middle-bar { opacity: 0; }
+.navbar .navbar-toggle .icon-bar.bottom-bar { transform: rotate(-45deg); transform-origin: 10% 90%; }
+.navbar .navbar-toggle.collapsed .top-bar { transform: rotate(0); }
+.navbar .navbar-toggle.collapsed .middle-bar { opacity: 1; }
+.navbar .navbar-toggle.collapsed .bottom-bar { transform: rotate(0); }
+.navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover { background-color: transparent; }
+
 /* Footer */
 /* CHOOSE DESKTOP FIRST OR MOBILE FIRST 	 ----------------------------------------------------------------- DESKTOP FIRST  */
 /* Large devices (large desktops, 1200px and up) */

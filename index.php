@@ -9,6 +9,9 @@ if (have_posts()):
 			<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
 			</a>
 		</h2>
+		<p class="info">
+			<small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?> </small>
+		</p>
 		<p>
 			<?php the_content(); ?>
 		</p>
