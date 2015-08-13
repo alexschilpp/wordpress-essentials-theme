@@ -1,36 +1,36 @@
 <!-- ... MAIN CONTENT -->
 
-</main>
+		</div>
+	</main>
 
-<footer>
-	<div class="footer-nav">
-		<?php 
+	<footer>
+		<div class="container">
+			<div class="footer-nav">
+				<?php 
 
-			$args = array(
-				'theme_location' => 'footer'
-			);
+					$args = array(
+						'theme_location' => 'footer'
+					);
 
-			wp_nav_menu($args);
+					wp_nav_menu($args);
 
-		?>
-	</div>
+				?>
+			</div>
 
-	<div class="ref-row">
-		<span class="ref">
-		  Made by 
-		  <a class="rolling" href="http://www.alexschilpp.com">
-		    <span data-hover="alexschilpp.com">
-		      alexschilpp.com
-		    </span>
-		  </a>
-		</span>
-	</div>
+			<div class="ref-row">
+				<span class="ref">
+				  Made by 
+				  <a class="rolling" href="http://www.alexschilpp.com">
+				    <span data-hover="alexschilpp.com">
+				      alexschilpp.com
+				    </span>
+				  </a>
+				</span>
+			</div>
 
-	
-</footer>
+			<?php wp_footer(); ?>
 
-<?php wp_footer(); ?>
-
-</div>
+		</div>
+	</footer>
 </body>
 </html>

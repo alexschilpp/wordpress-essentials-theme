@@ -53,9 +53,8 @@
 
 
 	<!-- /navigation -->
-
-	<div class="container">
-	<main class="main-content">
+	<main>
+		<div class="container">
 
 	<!-- ... MAIN CONTENT -->
 
