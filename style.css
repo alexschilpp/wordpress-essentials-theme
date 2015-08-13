@@ -10,6 +10,8 @@ body { padding-top: 50px; }
 
 .main-content { padding: 20px; }
 
+*, *:after, *::before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
 /* Navbar */
 .navbar { /* Hamburger X animation */ }
 .navbar .navbar-toggle { border: none 0; background-color: transparent; }
@@ -23,6 +25,14 @@ body { padding-top: 50px; }
 .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover { background-color: transparent; }
 
 /* Footer */
+footer .ref-row .ref { color: black; font-weight: 300; font-size: 12px; float: right; }
+footer .ref-row .ref a.rolling { color: white; line-height: 21px; -webkit-perspective: 1000px; -moz-perspective: 1000px; perspective: 1000px; }
+footer .ref-row .ref a.rolling span { position: relative; display: inline-block; padding: 0 5px; background: #6889ab; -webkit-transition: -webkit-transform 0.3s; -moz-transition: -moz-transform 0.3s; transition: transform 0.3s; -webkit-transform-origin: 50% 0; -moz-transform-origin: 50% 0; transform-origin: 50% 0; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; }
+footer .ref-row .ref a.rolling span::before { position: absolute; padding: 0 5px; top: 100%; left: 0; width: 100%; height: 100%; background: #0965a0; content: attr(data-hover); -webkit-transition: background 0.3s; -moz-transition: background 0.3s; transition: background 0.3s; -webkit-transform: rotateX(-90deg); -moz-transform: rotateX(-90deg); transform: rotateX(-90deg); -webkit-transform-origin: 50% 0; -moz-transform-origin: 50% 0; transform-origin: 50% 0; }
+footer .ref-row .ref a.rolling:hover span, footer .ref-row .ref a.rolling:focus span { -webkit-transform: rotateX(90deg) translateY(-22px); -moz-transform: rotateX(90deg) translateY(-22px); transform: rotateX(90deg) translateY(-22px); }
+footer .ref-row .ref a.rolling:hover span::before, footer .ref-row .ref a.rolling:focus span::before { background: #8196ab; }
+footer .ref-row:after { display: table; clear: both; content: ''; }
+
 /* CHOOSE DESKTOP FIRST OR MOBILE FIRST 	 ----------------------------------------------------------------- DESKTOP FIRST  */
 /* Large devices (large desktops, 1200px and up) */
 /* No media query since this is the default */

@@ -14,7 +14,19 @@
 
 		?>
 	</div>
-	<p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
+
+	<div class="ref-row">
+		<span class="ref">
+		  Made by 
+		  <a class="rolling" href="http://www.alexschilpp.com">
+		    <span data-hover="alexschilpp.com">
+		      alexschilpp.com
+		    </span>
+		  </a>
+		</span>
+	</div>
+
+	
 </footer>
 
 <?php wp_footer(); ?>
